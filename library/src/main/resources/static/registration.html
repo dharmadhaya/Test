@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymleaf.org">
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Registration</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/user-service.js"></script>
+	</head>
+
+<body>
+
+	<!-- create navigation bar ( header) -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+					aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand">LIBRARY MANGEMENT</a>
+			</div>
+		</div>
+	</nav>
+
+	<br>
+	<br>
+	<!-- Create HTML registration form -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+
+				<!-- error message -->
+				<div id="error_usr_msg">
+					<div class="alert alert-danger">Check the Details
+					</div>
+				</div>
+
+				<!-- success message -->
+				<div id="success_usr_msg">
+					<div class="alert alert-info">You've successfully registered!</div>
+				</div>
+
+
+				<h1>Create User Account</h1>
+
+				<form>
+					<div class="form-group">
+						<label class="control-label" for="fullName"> Full Name </label> <input id="txtFullName"
+							class="form-control" required autofocus="autofocus" />
+					</div>
+
+					<div class="form-group">
+						<label class="control-label" for="userName"> User Name </label> <input id="txtUseName"
+							class="form-control" required autofocus="autofocus" />
+					</div>
+
+					<div class="form-group">
+						<label class="control-label" for="password"> Password </label> <input id="txtUsePassword"
+							class="form-control" type="password" required autofocus="autofocus" />
+					</div>
+
+					<div class="form-group">
+						<button type="submit" class="btn btn-success" onclick="getUserAccountDetails()">Register</button>
+						<span>Already registered? <a href="login.html">Login
+								here</a></span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

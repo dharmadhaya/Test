@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Add Book</title>
+  <!-- CSS only -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/menuBar.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/includeHtml.js"></script>
+  
+  <script src="js/master-service.js"></script>
+</head>
+<p w3-include-html="html/menu.html"></p>
+<script>
+  w3.includeHTML();
+</script>
+
+<body>
+  <script src="js/global.js"></script>
+  <div class="container">
+    <fieldset class="col-md-4">
+      <legend style="color: white" align="left">Author</legend>
+      <p style="margin-top: 0.4em; margin-bottom: 0em;"></p>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group"><span class="spanclass">Add Author</span><input type="text" id="txtAuthorName"
+              class="form-control form-control-sm"></div>
+        </div>
+        <div class="col-md-12" align="center">
+          <div class="form-group"><button type="button" class="btn btn-primary"
+              onclick="insertAuthorName()">Submit</button></div>
+        </div>
+      </div>
+  </div>
+  </fieldset>
+  </div>
+  </div>
+</body>
+
+</html>

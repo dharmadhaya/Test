@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <script src="js/user-service.js"></script>
+<meta charset="ISO-8859-1">
+<title>Registration and Login App</title>
+<style type="text/css">
+.navbar-default {
+    background-color: #4682B4;
+    border-color: #E7E7E7;
+}
+
+</style>
+  
+</head>
+<body>
+	<!-- create navigation bar ( header) -->
+	<nav class="navbar navbar-default navbar-expand-lg navbar-dark ">
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/book.png" width="30" height="30" alt=""> Masters </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    
+                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Author</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="addAuthor.html">Add/Edit/Block</a></li>
+                            <li><a class="dropdown-item" href="#">Unblock</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Publisher</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="addPublish.html">Add/Edit/Block</a></li>
+                            <li><a class="dropdown-item" href="#">Unblock</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Book Registration</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="addBook.html">Add/Edit/Block</a></li>
+                            <li><a class="dropdown-item" href="#">Unblock</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+      <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/book.png" width="30" height="30" alt=""> Reports </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                   <a class="dropdown-item" href="#">All</a>
+                   <a class="dropdown-item" href="#">Books </a>
+                </ul>
+            </li>
+      	 </ul>
+         
+    <div class="form-group"> 
+    <button class="btn btn-secondary my-2 my-sm-0" id="logout" type="submit" value="logout" onclick="window.location.href = 'login.html'">Logout</button>  
+    </div>
+  </div>
+</nav> 
+</body>
+</html>
